@@ -1,15 +1,10 @@
-import streamlit as st
 import pandas as pd
-import numpy as np
-from tensorflow.keras.models import load_model
 import streamlit as st
-import librosa
-import numpy as np
-from scipy import signal
-from keras.preprocessing.sequence import pad_sequences
-from keras.preprocessing.text import Tokenizer
+import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
 import assemblyai as aai
-
+import streamlit as st
+from transformers import pipeline
 
 st.set_page_config(layout="wide")
 st.title("Enhancing Customer Expereince🤗😏😑 With Multimodal Sentiment Analysis")
@@ -71,8 +66,7 @@ with see_data:
 
 # Tab3
 
-import streamlit as st
-from transformers import pipeline
+
 
 # Load the pre-trained sentiment analysis model
 sentiment_analysis = pipeline("sentiment-analysis")
@@ -100,10 +94,7 @@ if __name__ == "__main__":
 
 # Tab4
 
-import streamlit as st
-import nltk
-from nltk.sentiment import SentimentIntensityAnalyzer
-import assemblyai as aai
+
 
 # Only necessary for the first time running the program
 nltk.download("vader_lexicon")
