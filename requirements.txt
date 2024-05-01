@@ -1,4 +1,4 @@
-
+tensorflow==2.15.0
 matplotlib
 nltk==3.8.1
 assemblyai==0.26.0
